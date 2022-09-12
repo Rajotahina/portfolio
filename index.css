@@ -1,8 +1,4 @@
-main{
-    background-color: whitesmoke;
-    border-radius: 8px;
-    
-}
+
 #link{
     color: black;
     text-decoration: none;
@@ -12,6 +8,7 @@ main{
 #title{
     text-align: right;
     margin-top: 70px;
+    
 }
 #image{
     margin-top: 60px;
@@ -20,20 +17,22 @@ main{
 .skill1{
  width: 50%;
  background-color:aquamarine;
- height: 20px;
+ height: 10px;
 }
 .skill2{
     width: 70%;
     background-color: aquamarine;
-    height: 20px;
+    height: 10px;
+    color: white;
 }
 .skill3{
     width: 30%;
     background-color: aquamarine;
-    height: 20px;
+    height: 10px;
+    
 }
 .skill4{
     width: 25%;
     background-color: aquamarine;
-    height: 20px;
+    height: 10px;
 }

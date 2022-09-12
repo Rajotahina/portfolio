@@ -47,6 +47,29 @@ var listItem = '';
  }
   document.getElementById('list_experiences').innerHTML = listItem;
 
+  $(document).on("click",".btn1",function(){
+   
+    if ($('body').hasClass("bg-dark")) {
+        $('body').removeClass("bg-dark");
+        $('body').addClass("bg-white");
+    } else{
+        $('body').removeClass("bg-white");
+        $('body').addClass("bg-dark");
+    }
+    if ($('.btn1').text()==="dark mode") {
+        $('.btn1').text("light mode");
+    }else if($('.btn1').text()==="light mode"){
+        $('.btn1').text("dark mode");
+    }
+    if ($('body').hasClass("bg-dark")) {
+        $('.dark').addClass("text-white");
+    } else{
+        $('.dark').removeClass("text-white");
+    }
+    
+
+})
+
     
 
 

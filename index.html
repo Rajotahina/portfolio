@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 bg-info">
                     <a href=""id="link">github</a>
                 </div>
-               <div class="col-md-4">
+               <div class="col-md-4 bg-info">
                     <a href=""id="link">facebook</a>
                </div>
-               <div class="col-md-4">
+               <div class="col-md-4 bg-info">
                     <a href=""id="link">034182986</a>
+               </div>
+               <div class="col-md-4bg-info">
+                    <button class="btn btn1 btn-success">dark mode</button>
                </div>
                <div class="container">
                 <div class="row">
@@ -28,7 +30,7 @@
                         <img src="cv.jpg" class="rounded-circle" id="image" width="200px" height="200px" alt="" srcset="">
                     </div>
                     <div class="col-md-6 col-xs-4">
-                        <div class="">
+                        <div class="dark">
                             <h1 id="title">RAJO TAHINA</h1>
                             <h2 id="title">DEVELOPPEMENT WEB</h2>
                             <button class="btn btn-success">portfolio</button>
@@ -44,25 +46,25 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 dark">
                     <h1 id="profiile">I am Rajo Tahina</h1>
                     <p id="paragraphe"> Extrêmement motivé pour développer constamment mes compétences et évoluer professionnellement.  Je suis confiant dans ma capacité à proposer des idées intéressantes pour des campagnes publicitaires inoubliables.",</p>
                 </div>
-                <div class="col-md-6">
-                    <h1>My skills</h1>
-                    <h2>javascript</h2>
+                <div class="col-md-6 ">
+                    <h1 class="dark">My skills</h1>
+                    <h2 class="text-primary">javascript</h2>
                     <div style="background-color: rgb(126, 126, 126);width: 100%;">
                         <div class="skill1"></div>
                     </div>
-                    <h2>html/css</h2>
+                    <h2 class="text-primary">html/css</h2>
                     <div style="background-color: rgb(143, 138, 138);">
                         <div class="skill2"></div>
                     </div>
-                    <h2>PHP</h2>
+                    <h2 class="text-primary">PHP</h2>
                     <div style="background-color: rgb(165, 161, 161);">
                         <div class="skill3"></div>
                     </div>
-                    <h2>Jquery</h2>
+                    <h2 class="text-primary">Jquery</h2>
                     <div style="background-color:rgb(212, 206, 206) ;">
                         <div class="skill4"></div>
                     </div>
@@ -89,7 +91,7 @@
                             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
                         </svg> 
                     </a>
-                    <div class="col"><br>
+                    <div class="col "><br>
                         <button class="btn btn-success">DOWLOAND CV</button>
                     </div>
                 </div>       
@@ -100,22 +102,22 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 dark">
                     <h1 class="d-flex align-items-center">experience</h1>
                     <ul id="list_experiences"></ul>
                 </div>
                 <div class="col-md-6">
-                    <h1>Framework</h1>
-                    <div class="card">
+                    <h1 class="dark">Framework</h1>
+                    <div class="card text-primary">
                         <h2>SYMFONY</h2>
                     </div><br>
-                    <div class="card">
+                    <div class="card text-primary">
                         <h2>PRESTASHOP</h2>
                     </div><br>
-                    <div class="card">
+                    <div class="card text-primary">
                         <h2>WORDPRESS</h2>
                     </div><br>
-                    <div class="card">
+                    <div class="card text-primary">
                         <h2>LAVAREL</h2>
                     </div>
                 </div>
@@ -145,7 +147,9 @@
             
         </div>
     </footer>
-       
-   <script src="index.js"></script> 
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script> 
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>  
+<script src="index.js" type="text/javascript"></script> 
 </body>
 </html>
