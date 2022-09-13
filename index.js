@@ -66,9 +66,7 @@ var listItem = '';
     } else{
         $('.dark').removeClass("text-white");
     }
-    
-
-})
+});
 
     
 
